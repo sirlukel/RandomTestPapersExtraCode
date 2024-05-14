@@ -4,7 +4,7 @@ library(randomtestpapersV2)
 
 #Testing Code
 
-#For good results you may need to create a different test or make several attempts in generating
+#For good results you may need to make several attempts in generating
 #a one question test. Since the generation of random tests was modified to allow for wider ranges of values
 #for the 3 question test, and as such in a one question test with this generation
 #it is likely to suffer from issues with separation.
