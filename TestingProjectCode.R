@@ -4,7 +4,7 @@ library(randomtestpapersV2)
 
 #Testing Code
 
-small_data <- gen_student_data(gen_stand_ran_test(100, "small_test", F, dupe = 1), 100, ran_type = 'n')
+small_data <- gen_student_data(gen_stand_ran_test(50, "small_test", F, dupe = 1), 100, ran_type = 'n')
 type1_results <- estimate(small_data, estimate_type = 2, group = F)
 plot_results(type1_results, small_data)
 check_ests(type1_results, small_data)
