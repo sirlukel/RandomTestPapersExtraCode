@@ -3,7 +3,10 @@ install_github("Sirlukel/RandomTestPapersV2")
 library(randomtestpapersV2)
 
 #Testing Code
-
+#Note the code has been modified to allow for more variation in difficulty in randomly generated tests.
+#This means it may take multiple attempts to generate a test that will give good estimates for a one question test
+#as sometimes this will suffer from issues with separation. In the report we forced the one
+#question test to have a difficulty of zero.
 small_data <- gen_student_data(gen_stand_ran_test(50, "small_test", F, dupe = 1), 100, ran_type = 'n')
 type1_results <- estimate(small_data, estimate_type = 2, group = F)
 plot_results(type1_results, small_data)
